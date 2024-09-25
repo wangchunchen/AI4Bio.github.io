@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBZUAI Workshop on Artificial Intelligence for Biology</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* Header container with image and text */
+        .header-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .header-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .header-container h1, .header-container p {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+            z-index: 2;
+            margin: 0;
+        }
+
+        /* Adjust for centered title */
+        @media (max-width: 900px) {
+            .header-container h1 {
+                top: 50%; /* Move the title to the middle of the image */
+                transform: translate(-50%, -50%); /* Ensure it is centered both horizontally and vertically */
+                font-size: 3.2vw; /* Font size of the title */
+                color: #e8fffb; /* Dark red color */
+                max-width: 80%; /* Control width for auto wrapping */
+                word-wrap: break-word; /* Ensure words break to the next line */
+            }
+
+            /* Styling for date with color */
+            .header-container p {
+                bottom: 20px;
+                font-size: 2.3vw;
+                color: #f6f4f0; /* Goldenrod color for the date */
+            }
+        }
+        
+        @media (min-width: 900px) {
+            .header-container h1 {
+                top: 50%; /* Move the title to the middle of the image */
+                transform: translate(-50%, -50%); /* Ensure it is centered both horizontally and vertically */
+                font-size: 1.8em; /* Font size of the title */
+                color: #e8fffb; /* Dark red color */
+                max-width: 80%; /* Control width for auto wrapping */
+                word-wrap: break-word; /* Ensure words break to the next line */
+            }
+
+            /* Styling for date with color */
+            .header-container p {
+                bottom: 20px;
+                font-size: 1.3em;
+                color: #f6f4f0; /* Goldenrod color for the date */
+            }
+        }
+
+        /* Navigation with background color */
+        nav {
+            text-align: center;
+            margin: 20px 0;
+            background-color: #517aa2; /* Goldenrod color */
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white; /* Text color for better contrast */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section-title {
+            color: #830303;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .organizers {
+            margin-top: 20px;
+        }
+
+        .organizers a {
+            color: #f37474;
+            text-decoration: none;
+        }
+
+        .speaker-list img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-left: 50px;
+            vertical-align: middle;
+        }
+
+        .speaker-list p {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 1.0em;
+            margin: 10px;
+        }
+
+        .speaker-list a {
+            color: #f37474;
+            text-decoration: none;
+        }
+
+        .program-section div {
+            margin-top: 20px;
+        }
+
+        .program-time {
+            font-weight: bold;
+            color: #8B0000;
+            margin-right: 10px;
+        }
+
+        /* Speaker Topic and Abstract */
+        .speaker-topic, .speaker-abstract {
+            margin-left: 50px;
+            margin-bottom: 10px;
+        }
+
+        .speaker-topic {
+            font-weight: bold;
+            color: #4a7c59;
+        }
+
+        .speaker-abstract {
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with image, title, and date -->
+        <div class="header-container">
+            <img src="../static/images/AI4Bio.png" alt="MBZUAI Workshop Banner">
+            <h1>MBZUAI Workshop on Artificial Intelligence for Biology</h1>
+            <p>Oct 9 - 10, 2024<br>MBZUAI, Abu Dhabi</p>
+        </div>
+        
+        <!-- Navigation bar -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#speakers">Speakers List</a>
+            <a href="#program1">Day 1</a>
+            <a href="#program2">Day 2</a>
+        </nav>
+
+        <div id="goals">
+            <h2 class="section-title">Workshop Goals</h2>
+            <p>We are excited to announce the AI4Bio Workshop on Artificial Intelligence for Biology. Organized by the Machine Learning department of MBZUAI, this workshop aims to explore the intersection of artificial intelligence and biology, with a focus on the latest advancements in AI techniques applied to biological data. The event is designed to foster collaboration and accelerate progress in AI-driven research in biology. We will bring together leading experts to discuss state-of-the-art methodologies, share groundbreaking research findings, and identify key challenges and opportunities in the AI for Biology field.</p>
+        </div>
+
+        <div id="focus">
+            <h2 class="section-title">Areas of Focus</h2>
+            <ul>
+{#                <li>Development of novel ML architectures for large model training and inference</li>#}
+{#                <li>Addressing bias and fairness in large model training data and output</li>#}
+{#                <li>Techniques for interpretability and explainability of large model behavior</li>#}
+{#                <li>Representation learning for large models</li>#}
+{#                <li>Mitigating risks and ensuring safety in large model development</li>#}
+{#                <li>Scaling and efficiency considerations for large-scale large model training</li>#}
+            </ul>
+        </div>
+
+        <div id="schedule">
+            <h2 class="section-title">Schedule</h2>
+            <p>We will host two days of invited talks (Oct 9-10) interspersed with panel discussions on challenges in AI for Biology. </p>
+        </div>
+
+        <div id="organizers" class="organizers">
+            <h2 class="section-title">Organizers</h2>
+{#            <p>Organizing committee:</p> #}
+            <p style="margin-left: 50px;"><a href="#">Eric Xing</a>, MBZUAI</p>
+            <p style="margin-left: 50px;"><a href="#">Le Song</a>, MBZUAI</p>
+
+{#            <p>Additional Organizers:</p>#}
+{#            <ul>#}
+{#                <li>Michalis Vazirgiannis, MBZUAI</li>#}
+{#                <li>Han Zhao, UIUC</li>#}
+{#                <li>Mingming Gong, MBZUAI</li>#}
+{#                <li>Zhiqiang Shen, MBZUAI</li>#}
+{#                <li>Eric Moulin, MBZUAI</li>#}
+{#            </ul>#}
+{#            <p>Local hosts:</p>#}
+{#            <ul>#}
+{#                <li>Maria Pereira, MBZUAI</li>#}
+{#                <li>Philip Purnell, MBZUAI</li>#}
+{#            </ul>#}
+        </div>
+
+        <div id="speakers" class="speaker-list">
+            <h2 class="section-title">Invited Speakers</h2>
+            <div>
+                <img src="../static/images/blog1.jpg" alt="Eric Xing">
+                <p><a href="#">Eric Xing</a>, MBZUAI</p>
+            </div>
+            <div>
+                <img src="../static/images/blog1.jpg" alt="Ziv Bar-Joseph">
+                <p><a href="#">Ziv Bar-Joseph</a>, </p>
+            </div>
+            <div>
+                <img src="../static/images/Jean-Philippe%20Vert.png" alt="Jean Philippe Vert">
+                <p><a href="https://jpvert.github.io/">Jean Philippe Vert</a>, Owkin</p>
+            </div>
+            <div>
+                <img src="../static/images/Yu%20Li.png" alt="Yu Li">
+                <p><a href="https://www.cse.cuhk.edu.hk/people/faculty/yu-li/">Yu Li</a>, The Chinese University of Hong Kong</p>
+            </div>
+            <div>
+                <img src="../static/images/Peter%20Koo.png" alt="Peter Koo">
+                <p><a href="https://www.cshl.edu/research/faculty-staff/peter-koo/">Peter Koo</a>, CSHL Cancer Center</p>
+            </div>
+            <div>
+                <img src="../static/images/Hoifung%20Poon.png" alt="Hoifung Poon">
+                <p><a href="https://www.microsoft.com/en-us/research/people/hoifung/ ">Hoifung Poon</a>, Microsoft Health Futures</p>
+            </div>
+            <div>
+                <img src="../static/images/le%20song.png" alt="Le Song">
+                <p><a href="#">Le Song</a>, MBZUAI</p>
+            </div>
+            <div>
+                <img src="../static/images/eran%20segal.png" alt="Eran Segal">
+                <p><a href="#">Eran Segal</a>, MBZUAI</p>
+            </div>
+            <div>
+                <img src="../static/images/Shirley%20Liu.png" alt="Shirley Liu">
+                <p><a href="https://liulab-dfci.github.io/people/shirley_liu">Shirley Liu</a>, Harvard University</p>
+            </div>
+            <div>
+                <img src="../static/images/Brian%20Hie.png" alt="Brian Hie">
+                <p><a href="https://brianhie.com/">Brian Hie</a>, Stanford University</p>
+            </div>
+            <div>
+                <img src="../static/images/blog1.jpg" alt="Christoph Bock">
+                <p><a href="https://cemm.at/research/groups/christoph-bock-group">Christoph Bock</a>, CSHL Cancer Center</p>
+            </div>
+            <div>
+                <img src="../static/images/Christoph%20Feinauer.png" alt="Christoph Feinauer">
+                <p><a href="https://artlab.unibocconi.eu/people/faculty/christoph-feinauer">Christoph Feinauer</a>, Bocconi University</p>
+            </div>
+            <div>
+                <img src="../static/images/Firas%20Khatib.png" alt="Firas D Khatib">
+                <p><a href="http://www.cis.umassd.edu/~fkhatib/contact.html">Firas D Khatib</a>, University Of Massachusetts Dartmouth</p>
+            </div>
+
+{#            <p style="margin-left: 50px;"><a href="https://cocosci.princeton.edu/tom/papers/AT_tois.pdf ">Michal Rosen-Zvi</a>, IBM Research Laboratory in Haifa</p><br>#}
+
+        </div>
+
+        <div id="program1" class="program-section">
+            <h2 class="section-title">Day 1 Program (Oct 9, Wed, Visitor Center)</h2>
+            <div>
+                <span class="program-time">9:00 am - 9:30 am</span>
+                <span>Breakfast and coffee</span>
+            </div>
+            <div>
+                <span class="program-time">9:30 am - 11:30 am</span>
+                <span>Session 1</span><br>
+
+                <span style="margin-left: 50px; font-weight: bold;">Eric Xing</span><br>
+                <p class="speaker-topic">Topic: " "</p>
+                <p class="speaker-abstract">Abstract: </p>
+
+                <span style="margin-left: 50px; font-weight: bold;">Ziv Bar-Joseph</span><br>
+                <p class="speaker-topic">Topic: ""</p>
+                <p class="speaker-abstract">Abstract: </p>
+
+{#                <span>Michal Rosen-Zvi (MBZUAI)</span>#}
+            </div>
+            <div>
+                <span class="program-time">11:30 am - 1:00 pm</span>
+                <span>Lunch break</span>
+            </div>
+            <div>
+                <span class="program-time">1:00 pm - 2:30 pm</span>
+                <span>Session 2</span><br>
+                <span style="margin-left: 50px; font-weight: bold;">Jean Philippe Vert</span><br>
+                <p class="speaker-topic">Topic: " "</p>
+                <p class="speaker-abstract">Abstract: </p>
+
+                <span style="margin-left: 50px; font-weight: bold;">Yu Li</span>
+                <p class="speaker-topic">"Complex disease modeling and efficient drug discovery with large language models"</p>
+                <p class="speaker-abstract">Abstract: Large language models, which can integrate and process large amounts of data in biomedicine, have great potential in modeling complex diseases and discovering functional biomolecules. Here, we showcase the potential with three examples. In the first example, we build a large language model trained on the insurance claims of around 123 million US people. With the model, we can give a unified representation of all the common complex diseases, which enables us to predict the genetic parameters of the diseases and discover unique genetic loci related to them efficiently. In the second example, we show how to utilize protein language models to discover remote homologs and functional peptides, such as peptides. With the model, we can discover diverse functional peptides with low sequence similarity against the known ones. In the final example, we show how to use the RNA language model to model the RNA sequence and structure relation, which enables us to perform RNA structure prediction.</p>
+
+            </div>
+            <div>
+                <span class="program-time">2:30 pm - 3:00 pm</span>
+                <span>Coffee break</span>
+            </div>
+            <div>
+                <span class="program-time">3:00 pm - 4:30 pm</span>
+                <span>Session 3</span><br>
+                <span style="margin-left: 50px; font-weight: bold;">Peter Koo</span><br>
+                <p class="speaker-topic">Topic: "Biological discovery with virtual experiments using cellular digital twins"</p>
+                <p class="speaker-abstract">Abstract: Deep neural networks (DNNs) have emerged as powerful tools for analyzing high-throughput functional genomics data. By fitting experimental data, DNNs can serve as "digital twins" of biological systems, enabling virtual experiments and counterfactual analyses. This approach opens up unprecedented opportunities for scientific discovery through in silico perturbation studies. Here, we introduce two domain-specific interpretability methods that leverage DNNs as a digital twin to uncover rules of gene regulation at various scales. First, we present SQUID, which employs nucleotide-level in silico perturbations to characterize biological mechanisms within a genomic locus. SQUID provides interpretable parameters representing cis-regulatory mechanisms by approximating DNN behavior in this local region of sequence space with biophysics-inspired surrogate models. This approach yields improved characterization of transcription factor binding motifs and enhances single-nucleotide variant effect predictions compared to existing attribution methods. Second, we present CRÈME, which employs multiscale in silico perturbations to identify cis-regulatory elements and characterize their enhancing or silencing effects on DNN predictions. By interpreting Enformer, a state-of-the-art sequence-based DNN for gene expression prediction, CRÈME reveals that Enformer's predictions generally integrate the effects of numerous enhancers and silencers through complex interaction rules, including additivity, cooperativity, and redundancy. Leveraging DNNs as a digital twin enables us to conduct virtual experiments at unprecedented scale, exploring vast combinatorial spaces of genetic variations to reveal regulatory patterns that are otherwise challenging to investigate through traditional wet-lab experiments. This AI-driven approach demonstrates the potential of interpretable deep learning in genomics, paving the way for more targeted experimental design and accelerating discoveries in biology and healthcare.</p>
+
+                <span style="margin-left: 50px; font-weight: bold;">Hoifung Poon</span>
+                <p class="speaker-topic">Topic: " "</p>
+                <p class="speaker-abstract">Abstract: </p>
+
+            </div>
+        </div>
+        <div id="program2" class="program-section">
+            <h2 class="section-title">Day 2 Program (Oct 10, Thu, Visitor Center)</h2>
+            <div>
+                <span class="program-time">9:00 am - 9:30 am</span>
+                <span>Breakfast and coffee</span>
+            </div>
+            <div>
+                <span class="program-time">9:00 am - 11:30 am</span>
+                <span>Session 1</span><br>
+                <span style="margin-left: 50px; font-weight: bold;">Le Song</span><br>
+                <p class="speaker-topic">Topic: ""</p>
+                <p class="speaker-abstract">Abstract: .</p>
+
+                <span style="margin-left: 50px; font-weight: bold;">Eran Segal</span><br>
+                <p class="speaker-topic">"HealthFormer: Foundation biomedical models from deep human phenotyping data"</p>
+                <p class="speaker-abstract">Abstract: Recent technological advances allow large cohorts of human individuals to be profiled, presenting many challenges and opportunities. I will present The Human Phenotype Project, a large-scale  (>25,000 participants) deep-phenotype prospective longitudinal cohort and biobank that we established, aimed at identifying novel molecular markers with diagnostic, prognostic and therapeutic value, and at developing prediction models for disease onset and progression. Our deep profiling includes medical history, lifestyle and nutritional habits, vital signs, anthropometrics, blood tests, continuous glucose and sleep monitoring, and molecular profiling of the transcriptome, genetics, gut and oral microbiome, metabolome and immune system. Our analyses of this data provide novel insights into potential drivers of obesity, diabetes, and heart disease, and identify hundreds of novel markers at the microbiome, metabolite, and immune system level. Foundation AI models that we developed provide novel representations of the diverse modalities that we measured on the cohort and achieve state-of-the-art performance in predicting future onset of disease and trajectories of disease risk factors. Overall, our predictive models can be translated into personalized disease prevention and treatment plans, and to the development of new therapeutic modalities based on metabolites and the microbiome.</p>
+
+                <span style="margin-left: 50px; font-weight: bold;">Shirley Liu</span>
+                <p class="speaker-topic">"Integrated Computation and Genomics for Cancer Target and Drug Discovery"</p>
+                <p class="speaker-abstract">Abstract: "Despite the exciting clinical benefits of immune checkpoint inhibitors, only a minority of cancer patients respond to treatment. Addressing resistance to immune checkpoint inhibitors is an urgent unmet need and requires novel approaches for target identification and drug discovery. GV20 Therapeutics adopts an interdisciplinary approach integrating AI on big data, functional genomics, and cancer immunology for cancer target identification and antibody drug discovery. Our STEAD platform computationally extracts antibodies from large cohorts of patient tumor RNA-seq profiles and uses AI to pair targets and corresponding antibodies in silico, de novo, with speed and scale. We then leverage in-house and public functional genomics and proteomics data to de-risk the AI-identified targets from patient tumors and provide insights on target function before we conduct systematic in vitro and in vivo validation experiments. </p>
+                <p class="speaker-abstract">Using the STEAD platform, we discovered our lead program, GV20-0251, a first-in-class monoclonal antibody against a novel innate immune checkpoint IGSF8. In multiple syngeneic tumor models, anti-IGSF8 antibody has single-agent efficacy and is synergistic with anti-PD1 in controlling tumor growth. We then worked backward to unravel the function of IGSF8 in suppressing natural killer cells and dendritic cells in antigen presentation defective tumors (Li et al, Cell 2024). The power of GV20’s AI platform is demonstrated by GV20-0251’s unprecedented 3-year timeline from target research to IND, and validated by GV20-0251’s favorable safety and promising monotherapy efficacy in advanced metastatic cancer patients in US clinics (NCT05669430 trial). As the first AI-predicted target and AI-designed antibody drug in the clinic, GV20-0251 represents the beginning of rationally combining AI and genomics to unlock the hidden information from patient profiles to develop novel biotherapeutics."</p>
+
+            </div>
+            <div>
+                <span class="program-time">11:30 am - 1:00 pm</span>
+                <span>Lunch break</span>
+            </div>
+            <div>
+                <span class="program-time">1:00 pm - 2:30 pm</span>
+                <span>Session 2</span><br>
+                <span style="margin-left: 50px; font-weight: bold;">Brian Hie</span><br>
+                <p class="speaker-topic">"Biological sequence modeling from molecular to genome scale with Evo"</p>
+                <p class="speaker-abstract">Abstract: The genome is a sequence that encodes the DNA, RNA, and proteins orchestrating an organism’s function. We present Evo, a long-context genomic foundation model with a frontier architecture trained on millions of prokaryotic and phage genomes, and report the first scaling laws on DNA to complement observations in language and vision. Evo generalizes across DNA, RNA, and proteins, enabling zero-shot function prediction competitive with domain-specific language models and the generation of functional CRISPR-Cas and transposon systems, representing the first examples of protein-RNA and protein-DNA co-design with a language model. Evo also learns how small nucleotide changes affect whole-organism fitness and generates coding-rich sequences exceeding 1 megabase. These prediction and generation capabilities span molecular to genome scales of complexity, advancing our understanding and control of biology.</p>
+
+                <span style="margin-left: 50px; font-weight: bold;">Christoph Bock</span>
+                <p class="speaker-topic">Topic: " "</p>
+                <p class="speaker-abstract">Abstract: </p>
+
+            </div>
+            <div>
+                <span class="program-time">2:30 pm - 3:00 pm</span>
+                <span>Coffee break</span>
+            </div>
+            <div>
+                <span class="program-time">3:00 pm - 4:30 pm</span>
+                <span>Session 3</span><br>
+                <span style="margin-left: 50px; font-weight: bold;">Christoph Feinauer</span><br>
+                <p class="speaker-topic">Topic: "Unlocking Sequence Space from Structure for Diverse and Efficient Protein Design"</p>
+                <p class="speaker-abstract">Abstract: This talk introduces a novel deep learning approach for unlocking sequence diversity from a single protein structure. By using structural encoders and decoders that generate entire sequence models for a given structure, we demonstrate the ability to rapidly generate diverse sequences while maintaining structural fidelity. This enhanced sequence diversity allows for a more comprehensive exploration of functional properties and opens the door to a broader understanding of sequence variability within fixed structures, with applications across therapeutics and biotechnology.</p>
+
+                <span style="margin-left: 50px; font-weight: bold;">Firas D Khatib</span>
+                <p class="speaker-topic">Topic: "Automating Human Intuition with the protein folding citizen science game Foldit"</p>
+                <p class="speaker-abstract">Abstract: Can the brainpower of humans worldwide be applied to critical problems posed in computational biology, such as the structure determination of proteins and designing novel enzymes? Yes! Citizen scientists—most of whom have little or no prior biochemistry experience—have uncovered knowledge that eluded scientists for years. Players of the online protein folding video game Foldit have contributed to several scientific discoveries through gameplay. Rather than solving problems with a purely computational approach, combining humans and computers can provide a means for solving problems neither could solve alone.</p>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
